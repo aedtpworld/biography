@@ -1,4 +1,4 @@
-Buddy DML — Biography (compiled)
+Buddy DML — Biography
 
 Real Name: Emmanuel Deliver Amable
 Date of Birth: April 14, 2008
@@ -69,4 +69,42 @@ Date of Birth	April 14, 2008
 Origin	Anloga, Volta Region, Ghana
 Genres	Afrobeat · R&B · Hip-Hop · Gospel · EDM · Amapiano · More
 Notable Works	EP “My Journey” (2024), Album “NATURE” (2025)
-Other Roles	Tech, Business, Software & Web Development (AEDTP WORLD)
+
+
+
+## Biography: Buddy DML (Emmanuel Deliver Amable)
+
+**Real Name**: Emmanuel Deliver Amable  
+**Date of Birth**: April 14, 2008  
+**Origin**: Anloga, Volta Region, Ghana :contentReference[oaicite:0]{index=0}  
+
+Buddy DML began his musical journey at age 13, releasing to audiences under his birth name before adopting his stage name for simplicity :contentReference[oaicite:1]{index=1}.  
+He’s a genre-blending musician, working across **Afrobeat, Afropop, Amapiano, R&B, Hip-Hop, Gospel, EDM**, and more :contentReference[oaicite:2]{index=2}.
+
+#### Notable Releases
+- **EP “My Journey”** (September 24, 2024) explores his life and relationship with Cayla, featuring styles from R&B to Amapiano :contentReference[oaicite:3]{index=3}.  
+- **Album “NATURE”** (May 1, 2025) dives into themes of love, resilience, and connection with diverse genres like Jazz, Hip-Hop, Funk, and World Music :contentReference[oaicite:4]{index=4}.
+
+#### Multi-Talented Creator
+Buddy DML writes, records, produces, mixes, and masters his music independently. He also applies his skills in **technology, software development, web development, and business**, representing AEDTP WORLD in multiple domains :contentReference[oaicite:5]{index=5}.
+
+---
+
+This should trigger the workflow, which will:
+1. Create `biographies/Buddy_DML.md`
+2. Include proper Jekyll front-matter
+3. Make the biography live on your GitHub Pages site
+
+---
+
+#### Step 2: Check Workflow Execution
+- After submitting the issue, visit the **Actions** tab in your repo.
+- Look for the **Auto Biography Publisher** run.
+- Confirm that a file named `Buddy_DML.md` appears in your `biographies/` directory.
+
+---
+
+Once that file is created, your biography page will go live—visible in the site index and accessible via its permalink.
+
+Would you like to preview how the page looks or get help tweaking the content further?
+::contentReference[oaicite:6]{index=6}Other Roles	Tech, Business, Software & Web Development (AEDTP WORLD)
