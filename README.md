@@ -1,11 +1,42 @@
 # biography
-/ (root)
-│── README.md
-│── index.html
-│── _config.yml
-│
-├── biographies/        ← GitHub Action will create files here
-│
-└── .github/
-    └── workflows/
-        └── auto-bio.yml
+name: Auto Biography Publisher
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  publish-bio:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Extract issue content
+        id: issue
+        run: |
+          echo "TITLE=$(echo '${{ github.event.issue.title }}' | sed 's/ /_/g')" >> $GITHUB_ENV
+          echo "BODY<<EOF" >> $GITHUB_ENV
+          echo "${{ github.event.issue.body }}" >> $GITHUB_ENV
+          echo "EOF" >> $GITHUB_ENV
+
+      - name: Create biography file
+        run: |
+          mkdir -p biographies
+          FILENAME="biographies/${TITLE}.md"
+          echo "---" > $FILENAME
+          echo "layout: page" >> $FILENAME
+          echo "title: Biography - ${{ github.event.issue.title }}" >> $FILENAME
+          echo "permalink: /biographies/${TITLE}/" >> $FILENAME
+          echo "---" >> $FILENAME
+          echo "" >> $FILENAME
+          echo "${BODY}" >> $FILENAME
+
+      - name: Commit biography
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add biographies/
+          git commit -m "Added biography: ${{ github.event.issue.title }}"
+          git push
