@@ -87,24 +87,3 @@ He’s a genre-blending musician, working across **Afrobeat, Afropop, Amapiano, 
 
 #### Multi-Talented Creator
 Buddy DML writes, records, produces, mixes, and masters his music independently. He also applies his skills in **technology, software development, web development, and business**, representing AEDTP WORLD in multiple domains :contentReference[oaicite:5]{index=5}.
-
----
-
-This should trigger the workflow, which will:
-1. Create `biographies/Buddy_DML.md`
-2. Include proper Jekyll front-matter
-3. Make the biography live on your GitHub Pages site
-
----
-
-#### Step 2: Check Workflow Execution
-- After submitting the issue, visit the **Actions** tab in your repo.
-- Look for the **Auto Biography Publisher** run.
-- Confirm that a file named `Buddy_DML.md` appears in your `biographies/` directory.
-
----
-
-Once that file is created, your biography page will go live—visible in the site index and accessible via its permalink.
-
-Would you like to preview how the page looks or get help tweaking the content further?
-::contentReference[oaicite:6]{index=6}Other Roles	Tech, Business, Software & Web Development (AEDTP WORLD)
